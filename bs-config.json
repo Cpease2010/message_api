@@ -1,0 +1,7 @@
+{
+  "server": {
+    "baseDir": "client",
+    "directory": true
+  },
+  "port": 8080
+}
