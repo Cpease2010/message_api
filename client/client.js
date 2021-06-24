@@ -1,5 +1,12 @@
-const socket = io('http://localhost:3000')
+const socket = io('http://localhost:3000');
 
-socket.on('message', data => {
-  console.log(data)
-})
+const memberName = prompt("Who goes there?");
+
+socket.on('welcome', data => {
+  console.log(data);
+  socket.emit('member-joined', memberName);
+});
+
+socket.on('new-member', member => {
+  console.log('client', member);
+});

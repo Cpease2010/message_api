@@ -7,5 +7,9 @@ const io = require("socket.io")(httpServer, {
 });
 
 io.on('connection', socket => {
-  socket.emit('message', 'We have arrived')
+  socket.emit('welcome', 'You have arrived')
+  
+  socket.on('member-joined', member => {
+    socket.broadcast.emit('new-member', member)
+  })
 })
