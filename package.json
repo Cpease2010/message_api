@@ -24,6 +24,7 @@
   "homepage": "https://github.com/Cpease2010/message_api#readme",
   "dependencies": {
     "dotenv": "^10.0.0",
+    "pg": "^8.6.0",
     "socket.io": "^4.1.2"
   },
   "devDependencies": {

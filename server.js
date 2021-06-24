@@ -1,3 +1,4 @@
+const db = require('./db-postgresql')
 const httpServer = require("http").createServer().listen(3000)
 const io = require("socket.io")(httpServer, {
   cors: {
@@ -7,7 +8,7 @@ const io = require("socket.io")(httpServer, {
 });
 
 io.on('connection', socket => {
-
+  console.log("Yea Yea")
   socket.emit('handshake', 'You have arrived')
   
   socket.on('member-joined', member => {

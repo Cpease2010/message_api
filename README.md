@@ -19,6 +19,7 @@ This simple API will enables real-time communication between 2 or more clients o
 ## Assumptions
 - The tech stack was chosen based on techs already in use.
 - [Websockets](https://www.educba.com/websocket-vs-rest/) were implemented over REST to allow for free flowing communication between the server and clients.
+- Use of [PostgreSQL Pool](https://node-postgres.com/features/pooling) instead of client to support high frequency access of tables.
 - Frontend design was not important as the requirements only spoke of the backend.
 
 ## Events
@@ -27,14 +28,16 @@ This simple API will enables real-time communication between 2 or more clients o
 
 ## Acceptane Criteria
 [x] A short text message can be sent from one user (the sender) to another
-(the recipient).
-[ ] Recent messages can be requested for a recipient from a specific sender with a limit of 100 messages or all messages in last 30 days.
+(the recipient).  
+[ ] Recent messages can be requested for a recipient from a specific sender with a limit of 100 messages or all messages in last 30 days.  
 [ ] Recent messages can be requested from all senders - with a limit of 100
-messages or all messages in last 30 days.
-[x] Document your api like you would be presenting to a web team for use.
-[x] Show us how you would test your api.
-[x] Ensure we can start / invoke your api.
+messages or all messages in last 30 days.  
+[x] Document your api like you would be presenting to a web team for use.  
+[x] Show us how you would test your api.  
+[x] Ensure we can start / invoke your api.  
+
 ## Stretch Goals
   - Parametize the socket port and client url
-  - Implement paramatized connection to database
+  - Paramatized connection to database
+  - Implement .env file
 
