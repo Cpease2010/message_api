@@ -14,3 +14,7 @@ socket.on('new-member', member => {
 socket.on('new-message', data => {
   console.log({user: data.user, message: data.message})
 })
+
+const sendMessage = ({user, message}) => {
+  socket.emit('message', {user: user, message: message})
+}
