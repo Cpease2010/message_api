@@ -6,7 +6,7 @@ This simple API will enables real-time communication between 2 or more clients o
 1. Navigate to the project folder in your terminal
 1. Run `npm i` to install dependencies
 1. Run `node server.js` to start the server & connect to PostgreSQL
-1. Run `npm lite-server` to start the client
+1. Run `npx lite-server` to start the client
 1. `Lite-server` should automatically open the client UI, if it does not navigate to http://localhost:8080/. To test you can duplicate this window, this will give you the ability to pass messages back and forth as if you were 2 separate people.
 
 ## Technologies Used
