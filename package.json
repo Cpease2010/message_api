@@ -1,0 +1,33 @@
+{
+  "name": "guild_message_api",
+  "version": "1.1.1",
+  "description": "Simple chat app",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "local": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Cpease2010/message_api.git"
+  },
+  "keywords": [
+    "node.js",
+    "socket.io",
+    "javascript"
+  ],
+  "author": "Cory Pease",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Cpease2010/message_api/issues"
+  },
+  "homepage": "https://github.com/Cpease2010/message_api#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "socket.io": "^4.1.2"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1",
+    "nodemon": "^2.0.7"
+  }
+}
